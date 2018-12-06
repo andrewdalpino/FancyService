@@ -4,6 +4,20 @@
 
 See *email-question.txt*
 
+### Installation
+Clone the repository locally:
+```sh
+$ git clone https://github.com/andrewdalpino/FancyService
+```
+
+Install dependencies:
+```sh
+$ composer install
+```
+
+### Requirements
+PHP 7.1.3 or above
+
 ### Implementation
 
 As the task was to achieve a *production-ready* implementation of the aforementioned objective, the micro-framework Lumen was chosen because it is a widely known and stable solution for rapid prototyping.
