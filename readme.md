@@ -39,6 +39,11 @@ The FancyService client which provides a PHP interface to their imaginary networ
 ### Database
 The database schema is defined in the *migrations* folder and includes a single table for products which defines the fields noted in the problem description. In addition, a *unique* index has been added to the UPC field to speed up  lookups and since UPC codes are unique by definition.
 
+To run the database migrations:
+```sh
+php artisan migrate
+```
+
 ### Testing
 Unit tests for the Product model can be found in the test folder.
 
