@@ -1,7 +1,9 @@
 <?php
 
-use App\Product;
 namespace App\Http\Controllers;
+
+use App\Product;
+use Illuminate\Http\JsonResponse;
 
 class ProductController extends Controller
 {
@@ -9,7 +11,7 @@ class ProductController extends Controller
      * Return the product information given a UPC.
      *
      * @param  mixed  $upc
-     * @return Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function lookup($upc)
     {

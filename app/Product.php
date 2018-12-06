@@ -16,6 +16,13 @@ class Product extends Model
     protected $table = 'products';
 
     /**
+     * Indicates if the IDs are auto-incrementing.
+     *
+     * @var bool
+     */
+    public $incrementing = true;
+
+    /**
      * Indicates if the model should be timestamped.
      *
      * @var bool
@@ -44,6 +51,9 @@ class Product extends Model
      * Look up the product by UPC. If the product is not in database,
      * then query Fancy Service for the data and store it before
      * returning.
+     * 
+     * @param  string  $upc
+     * @return self
      */
     public static function lookup(string $upc) : self
     {
